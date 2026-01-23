@@ -3,7 +3,8 @@ Unofficial DLC with toggleable features
 
 
 ### Features:
-- Civ Starting Bonus
+- __Civ Starting Bonus__
+    Rename units by right-clicking the unit name
 - Unit Rename
 - Fog Regrows
 - City takes pillage damage
