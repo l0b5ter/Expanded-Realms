@@ -1,7 +1,8 @@
 # Expanded-Realms
 Unofficial DLC with toggleable features
 
-<img width="513" height="744" alt="image" src="https://github.com/user-attachments/assets/47deb0bd-b1d5-4903-9511-592cd6e2945d" /><img width="529" height="730" alt="image" src="https://github.com/user-attachments/assets/e40cb3f0-d7a8-4686-b691-417a79696df1" />
+<img width="513" height="744" alt="image" src="https://github.com/user-attachments/assets/47deb0bd-b1d5-4903-9511-592cd6e2945d" /><img width="472" height="747" alt="image" src="https://github.com/user-attachments/assets/803c759d-3c97-4473-83c3-06b82b7f5cdd" />
+
 
 
 
