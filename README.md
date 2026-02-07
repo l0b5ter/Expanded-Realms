@@ -3,7 +3,11 @@ Unofficial DLC with toggleable features
 
 <img width="513" height="744" alt="image" src="https://github.com/user-attachments/assets/47deb0bd-b1d5-4903-9511-592cd6e2945d" /><img width="472" height="747" alt="image" src="https://github.com/user-attachments/assets/803c759d-3c97-4473-83c3-06b82b7f5cdd" />
 
+##NOTE this is a DLC not a mod! Meaning it works in multiplayer games :D
+To improve smoothnes and prevent desync for multiplayer games, v0.0.2 added the "handshake" mechaninc. This to make sure player has the dlc and that everyone has the right toggles enabled. When the game start each player with the dlc will write their current dlc version to the game, on 1st turn the game will check version then sync toggles to the game host (player 0), meaning after this each player will have the same toggle state as game host.
+<img width="396" height="178" alt="Screenshot 2026-02-01 004502" src="https://github.com/user-attachments/assets/f1137993-c32f-4c54-8220-9a78463f7a6b" />
 
+On singleplayer games this "handshake" will simply not run, cause only 1 player in game.
 
 
 
