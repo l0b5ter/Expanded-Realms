@@ -33,7 +33,7 @@ On singleplayer games this "handshake" will simply not run, cause only 1 player 
     Units ending their turn on fallout tiles takes 25 damage.    
 - __Nuclear Plant Can Meltdown__ (currently disabled)  
 - __Helicopters on coast__              
-    Allows helicopters to hover on coastal tiles. -10% attack bonus, -30% defense bonus.   
+    Allows helicopters to hover on coastal tiles. Slight nerf to balance this change -10% attack bonus, -30% defense bonus.   
 - __More CS Quests__                              
     Adds 3 new rare CityState quests based on relations. Each 10 turns theres a 6% chance that a Citystate will pick one of these.   
     "Silent Witness":    
