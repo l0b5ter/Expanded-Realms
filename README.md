@@ -12,7 +12,18 @@ Unofficial DLC with toggleable features
 - __Unit Rename__                            
     Rename units by right-clicking the unit name.  
 - __Fog Regrows__                   
-    Fog gradually returns to unrevealed tiles after 12 inactive turns.  
+    Fog gradually returns to unrevealed tiles after 12 inactive turns.
+- __Natural Disasters__                   
+    Adds 7 world events based on natural disasters.
+      Blizzard: Tiles turn to Tundra/Snow while pillaging improvements
+      Drought: Tiles turn to plains/desert
+      River silting: Tiles next to river becomes "flooded", marsh on tiles, plains turn to grassland while pillaging tiles
+      Flood: Tiles turn to plains/grassland while pillaging tiles
+      Eruption: Pillages tiles around the natural wonder (Karakota and Fuji)
+      Wildfire: Jungle/Forest fires in a radius around target tile
+      Plague: Random city gets effected and lose 1 pop.
+- __Climate Changes__                   
+    Climate change alters the map as you play, accelerating with each factory, nuclear plant and airport built. Altitude based, meaning top and bottom of map will feel the cold, while middle will get the heat.
 - __City takes pillage damage__                  
     City takes 5 damage per pillaged tiles (3 tiles radius).    
 - __Fallout damage__                
