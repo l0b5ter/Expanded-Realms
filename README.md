@@ -8,7 +8,6 @@ Unofficial DLC with toggleable features
 
 
 ### Features:
-- __Civ Starting Bonus__  
 - __Unit Rename__                            
     Rename units by right-clicking the unit name.  
 - __Fog Regrows__                   
@@ -45,4 +44,10 @@ Unofficial DLC with toggleable features
 - __CS Conquest Penalty__                               
     Makes Ai punish CityState absorption.   
 - __War Workers: Roads & Forts__                               
-    Incorporates the worker unit into the AI's war and defense behaviour. While attacking a city the worker will stack with a war unit and make a road towards the enemy city. If enemy       unit appears next to this stack, will make the worker back off. When the city attack takes more than 10turns, the worker will start making forts outside of the city range. When          defending against an attack, the worker will make forts on unimproved tiles. When the war ends the worker will replace the fort with improvements.    
+    Incorporates the worker unit into the AI's war and defense behaviour. While attacking a city the worker will stack with a war unit and make a road towards the enemy city. If enemy       unit appears next to this stack, will make the worker back off. When the city attack takes more than 10turns, the worker will start making forts outside of the city range. When          defending against an attack, the worker will make forts on unimproved tiles. When the war ends the worker will replace the fort with improvements.
+
+
+
+
+  ### Features (WIP):
+- __Civ Starting Bonus__  
