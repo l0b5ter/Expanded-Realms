@@ -5,6 +5,7 @@ Unofficial DLC with toggleable features
 
 NOTE this is a DLC not a mod! Meaning it works in multiplayer games :D
 To improve smoothness and prevent desync in multiplayer games, v0.0.2 added the "handshake" mechaninc. This to make sure players has the dlc and that everyone has the right toggles enabled. When the game start each player with the dlc will write their current dlc version to the game, on 1st turn the game will check version then sync toggles to the game host (player 0), meaning after this each player will have the same toggle state as game host. __Game host decides__
+
 <img width="396" height="178" alt="Screenshot 2026-02-01 004502" src="https://github.com/user-attachments/assets/f1137993-c32f-4c54-8220-9a78463f7a6b" />
 
 On singleplayer games this "handshake" will simply not run, cause only 1 player in game.
@@ -59,9 +60,9 @@ On singleplayer games this "handshake" will simply not run, cause only 1 player 
 
 
   ### Upcoming Features (WIP):
-- __Barbarians: Camps reworked__                               
+- __Barbarians: Camps Reworked__                               
     Encampments far away from civs goes dormant (removed). When a active one is about to be cleared, a new spawns further away. This small change greatly improves the barbarian turn.
-- __Barbarians: Camps evolved__                               
+- __Barbarians: Camps Evolved__                               
     Barbarians now level up their encampments throught pillage, capture and unit kills. Allowing spawned barbarians from this encampment to have promotions.
 - __Barbarians: Scout & Raid__                               
     Incorporates feature from Civ6. Barbarians now 'scouts' and sends out raid parties to attack 'scouted' city. These raid  parties are 2-5 barbarians depending on era and encampment level. If 2 or more cities is 'scouted', the barbarian will target the civ with the highest score. Making high score civs have to take on more barbarians, this applies to AI too.
