@@ -53,5 +53,15 @@ On singleplayer games this "handshake" will simply not run, cause only 1 player 
 
 
 
-  ### Features (WIP):
+  ### Features (VIP):
 - __Civ Starting Bonus__  
+
+
+
+  ### Upcoming Features (WIP):
+- __Barbarians: Camps reworked__                               
+    Encampments far away from civs goes dormant (removed). When a active one is about to be cleared, a new spawns further away. This small change greatly improves the barbarian turn.
+- __Barbarians: Camps evolved__                               
+    Barbarians now level up their encampments throught pillage, capture and unit kills. Allowing spawned barbarians from this encampment to have promotions.
+- __Barbarians: Scout & Raid__                               
+    Incorporates feature from Civ6. Barbarians now 'scouts' and sends out raid parties to attack 'scouted' city. These raid  parties are 2-5 barbarians depending on era and encampment level. If 2 or more cities is 'scouted', the barbarian will target the civ with the highest score. Making high score civs have to take on more barbarians, this applies to AI too.
