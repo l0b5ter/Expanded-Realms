@@ -122,7 +122,7 @@ $erVersionPath = Join-Path $dlcDest $VersionFileName
 
 $installedVer = Get-ErVersionFromFile $erVersionPath
 if ($installedVer) {
-  Write-Host "Installed DLC version (from $VersionFileName): $installedVer"
+  Write-Host "Installed DLC version: $installedVer"
 } elseif (Test-Path $dlcDest) {
   Write-Host "Installed DLC folder exists, but couldn't read version from $VersionFileName."
 } else {
@@ -189,7 +189,8 @@ if ($newVer) {
 }
 
 Write-Host "`n[DONE] Installation/update complete."
-Write-Host "Launch Civ 5 normally (no Mods menu needed)."
+Write-Host "Launch Civ 5 normally :D"
 
 # Cleanup
 try { Remove-Item $tempDir -Recurse -Force } catch {}
+
