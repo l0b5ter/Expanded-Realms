@@ -8,12 +8,13 @@
     "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/Expansion8_v01.zip",
     "sha256": ""
   },
+
   "modules": [
     {
       "id": "EnginesOfChange",
       "name": "Engines Of Change",
       "subtitle": "Adds the Monitor and Airship",
-      "description": "Adds 2 new Industrial-era unit, the Monitor and Airship.",
+      "description": "Adds two new Industrial-era units: the Monitor and the Airship.",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/EnginesOfChange_v1.zip",
       "sha256": "",
@@ -21,11 +22,12 @@
       "requiredDlcVersion": 1,
       "dependencies": []
     },
+
     {
       "id": "MapPackEarth",
       "name": "MapPack - Earth",
-      "subtitle": "Adds some additional maps",
-      "description": "CustomWorld5 map[NEWLINE]Huge map initially generated with Cephalo's PerfectWorld3 map script. heavily edited to my taste. Continents, Randomized resources, randomized goodies.[NEWLINE]By Batrach[NEWLINE][NEWLINE]Arakis map[NEWLINE]This map is based on a map of Arakis that I found on Google. Made the map and filled with spice :). Game got dull so I added in[NEWLINE]By Maruska",
+      "subtitle": "Adds additional custom maps",
+      "description": "CustomWorld5\nA huge map initially generated with Cephalo's PerfectWorld3 map script and heavily edited by Batrach. Features continents, randomized resources, and randomized goodies.\n\nArakis\nA custom map based on a map of Arakis, filled with spice and additional gameplay changes.\n\nBy Maruska.",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/MappackEarth_v1.zip",
       "sha256": "",
@@ -33,11 +35,12 @@
       "requiredDlcVersion": 1,
       "dependencies": []
     },
+
     {
       "id": "TweakBuildings",
       "name": "Tweak - Buildings",
       "subtitle": "Adjusts buildings and their resource bonuses",
-      "description": "Changes and rebalances various buildings.",
+      "description": "Changes and rebalances various buildings and their resource bonuses.",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/TweakBuildings_v1.zip",
       "sha256": "",
@@ -45,11 +48,12 @@
       "requiredDlcVersion": 1,
       "dependencies": []
     },
+
     {
       "id": "TweakNaturalWonders",
       "name": "Tweak - Natural Wonders",
-      "subtitle": "Adjusts Natural Wonders to balance them out.",
-      "description": "Barringer Crater[NEWLINE]+2 Production[NEWLINE]+2 Gold[NEWLINE]+3 Science[NEWLINE][NEWLINE]Grand Mesa[NEWLINE]+2 Food[NEWLINE]+2 Production[NEWLINE]+3 Gold[NEWLINE][NEWLINE]Krakatoa[NEWLINE]+1 Food[NEWLINE]+5 Science[NEWLINE][NEWLINE]Old Faithful[NEWLINE]+4 Science[NEWLINE][NEWLINE]Fountain of Youth[NEWLINE]+6 Happiness[NEWLINE][NEWLINE]Lake Victoria[NEWLINE]Floating Gardens provide +1 Food to Lake Victoria.",
+      "subtitle": "Adjusts Natural Wonders to balance them out",
+      "description": "Barringer Crater\n+2 Production\n+2 Gold\n+3 Science\n\nGrand Mesa\n+2 Food\n+2 Production\n+3 Gold\n\nKrakatoa\n+1 Food\n+5 Science\n\nOld Faithful\n+4 Science\n\nFountain of Youth\n+6 Happiness\n\nLake Victoria\nFloating Gardens provide +1 Food to Lake Victoria.",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/TweakNaturalWonders_v1.zip",
       "sha256": "",
@@ -57,11 +61,12 @@
       "requiredDlcVersion": 1,
       "dependencies": []
     },
+
     {
       "id": "TweakUnits",
       "name": "Tweak - Units",
       "subtitle": "Rebalances units and their resource requirements",
-      "description": "PARATROOPER[NEWLINE]- Movement reduced to 1[NEWLINE]- No longer receives free pillaging movement[NEWLINE][NEWLINE]XCOM SQUAD[NEWLINE]- Extended Paradrop range increased to 20[NEWLINE][NEWLINE]HELICOPTER GUNSHIP[NEWLINE]- Gains Hit-and-Run Doctrine[NEWLINE]- +20% Combat Strength when attacking[NEWLINE]- -33% Combat Strength when defending[NEWLINE]- Can move after attacking[NEWLINE]- Requires 1 Oil and 1 Aluminum[NEWLINE][NEWLINE]NUCLEAR WEAPONS[NEWLINE]Atomic Bomb[NEWLINE]- Can no longer be purchased with Gold[NEWLINE][NEWLINE]Nuclear Missile[NEWLINE]- Can no longer be purchased with Gold[NEWLINE][NEWLINE]LAND UNIT RESOURCES[NEWLINE]Cannon[NEWLINE]- 1 Iron[NEWLINE][NEWLINE]Artillery[NEWLINE]- 1 Iron[NEWLINE][NEWLINE]Rocket Artillery[NEWLINE]- 1 Aluminum[NEWLINE][NEWLINE]Landship[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Tank[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Modern Armor[NEWLINE]- 1 Oil + 1 Aluminum[NEWLINE][NEWLINE]NAVAL UNIT RESOURCES[NEWLINE]Ironclad[NEWLINE]- 1 Coal + 1 Iron[NEWLINE][NEWLINE]Destroyer[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Battleship[NEWLINE]- 2 Oil + 1 Iron[NEWLINE][NEWLINE]Carrier[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Submarine[NEWLINE]- 1 Oil[NEWLINE][NEWLINE]Nuclear Submarine[NEWLINE]- 1 Uranium[NEWLINE][NEWLINE]Missile Cruiser[NEWLINE]- 1 Oil + 1 Aluminum[NEWLINE][NEWLINE]AIR UNIT RESOURCES[NEWLINE]Great War Bomber[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Fighter[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Bomber[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Jet Fighter[NEWLINE]- 1 Oil + 1 Aluminum[NEWLINE][NEWLINE]Stealth Bomber[NEWLINE]- 1 Oil + 1 Aluminum",
+      "description": "PARATROOPER\n- Movement reduced to 1\n- No longer receives free pillaging movement\n\nXCOM SQUAD\n- Extended Paradrop range increased to 20\n\nHELICOPTER GUNSHIP\n- Gains Hit-and-Run Doctrine\n- +20% Combat Strength when attacking\n- -33% Combat Strength when defending\n- Can move after attacking\n- Requires 1 Oil and 1 Aluminum\n\nNUCLEAR WEAPONS\nAtomic Bomb\n- Can no longer be purchased with Gold\n\nNuclear Missile\n- Can no longer be purchased with Gold\n\nLAND UNIT RESOURCES\nCannon\n- 1 Iron\n\nArtillery\n- 1 Iron\n\nRocket Artillery\n- 1 Aluminum\n\nLandship\n- 1 Oil + 1 Iron\n\nTank\n- 1 Oil + 1 Iron\n\nModern Armor\n- 1 Oil + 1 Aluminum\n\nNAVAL UNIT RESOURCES\nIronclad\n- 1 Coal + 1 Iron\n\nDestroyer\n- 1 Oil + 1 Iron\n\nBattleship\n- 2 Oil + 1 Iron\n\nCarrier\n- 1 Oil + 1 Iron\n\nSubmarine\n- 1 Oil\n\nNuclear Submarine\n- 1 Uranium\n\nMissile Cruiser\n- 1 Oil + 1 Aluminum\n\nAIR UNIT RESOURCES\nGreat War Bomber\n- 1 Oil + 1 Iron\n\nFighter\n- 1 Oil + 1 Iron\n\nBomber\n- 1 Oil + 1 Iron\n\nJet Fighter\n- 1 Oil + 1 Aluminum\n\nStealth Bomber\n- 1 Oil + 1 Aluminum",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/TweakUnits_v1.zip",
       "sha256": "",
@@ -69,11 +74,12 @@
       "requiredDlcVersion": 1,
       "dependencies": []
     },
+
     {
       "id": "WorkableMountains",
       "name": "Workable Mountains",
-      "subtitle": "",
-      "description": "",
+      "subtitle": "Allows mountain tiles to be worked by cities",
+      "description": "Allows cities to work mountain tiles and receive their available yields.",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/WorkableMountains_v1.zip",
       "sha256": "",
