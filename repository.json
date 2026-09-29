@@ -1,6 +1,59 @@
+"officialDlc": {
+    "mongolia": {
+        "name": "Civilization and Scenario Pack: Mongolia",
+        "folder": "DLC_01"
+    },
+    "spainInca": {
+        "name": "Civilization and Scenario Double Pack: Spain and Inca",
+        "folder": "DLC_02"
+    },
+    "polynesia": {
+        "name": "Civilization and Scenario Pack: Polynesia",
+        "folder": "DLC_03"
+    },
+    "denmark": {
+        "name": "Civilization and Scenario Pack: Denmark - The Vikings",
+        "folder": "DLC_04"
+    },
+    "korea": {
+        "name": "Civilization and Scenario Pack: Korea",
+        "folder": "DLC_05"
+    },
+    "ancientWonders": {
+        "name": "Wonders of the Ancient World Scenario Pack",
+        "folder": "DLC_06"
+    },
+    "conquestNewWorld": {
+        "name": "Conquest of the New World Scenario Pack",
+        "folder": "DLC_07"
+    },
+    "babylon": {
+        "name": "Babylon - Nebuchadnezzar II",
+        "folder": "DLC_Deluxe"
+    },
+    "explorersMapPack": {
+        "name": "Explorer's Map Pack",
+        "folder": "DLC_SP_Maps"
+    },
+    "scrambledContinents": {
+        "name": "Scrambled Continents Map Pack",
+        "folder": "DLC_SP_Maps_2"
+    },
+    "scrambledNations": {
+        "name": "Scrambled Nations Map Pack",
+        "folder": "DLC_SP_Maps_3"
+    },
+    "godsAndKings": {
+        "name": "Gods & Kings",
+        "folder": "Expansion"
+    },
+    "braveNewWorld": {
+        "name": "Brave New World",
+        "folder": "Expansion2"
+    }
+},
 {
-  "schemaVersion": 1,
-
+  "schemaVersion": 2,
   "dlc": {
     "id": "Expansion8",
     "name": "Expanded Realms",
@@ -8,7 +61,6 @@
     "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/Expansion8_v01.zip",
     "sha256": ""
   },
-
   "modules": [
     {
       "id": "EnginesOfChange",
