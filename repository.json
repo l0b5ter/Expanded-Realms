@@ -1,4 +1,6 @@
-"officialDlc": {
+{
+  "schemaVersion": 2,
+  "officialDlc": {
     "mongolia": {
         "name": "Civilization and Scenario Pack: Mongolia",
         "folder": "DLC_01"
@@ -51,9 +53,7 @@
         "name": "Brave New World",
         "folder": "Expansion2"
     }
-},
-{
-  "schemaVersion": 2,
+  },
   "dlc": {
     "id": "Expansion8",
     "name": "Expanded Realms",
