@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+    <ID>TweakUnits</ID>
+    <Name>Tweak - Units</Name>
+    <Subtitle>Rebalances units and their resource requirements</Subtitle>
+    <Description>PARATROOPER[NEWLINE]- Movement reduced from 2 to 1[NEWLINE]- No longer receives free pillaging movement[NEWLINE][NEWLINE]XCOM SQUAD[NEWLINE]- Extended Paradrop range reduced from 40 to 20[NEWLINE][NEWLINE]HELICOPTER GUNSHIP[NEWLINE]- Gains Hit-and-Run Doctrine[NEWLINE]- +20% Combat Strength when attacking[NEWLINE]- -33% Combat Strength when defending[NEWLINE]- Can move after attacking[NEWLINE]- Requires 1 Oil and 1 Aluminum[NEWLINE][NEWLINE]GUIDED MISSILE[NEWLINE]- Ranged Combat Strength set to 80[NEWLINE][NEWLINE]NUCLEAR WEAPONS[NEWLINE]Atomic Bomb[NEWLINE]- Can no longer be purchased with Gold[NEWLINE][NEWLINE]Nuclear Missile[NEWLINE]- Can no longer be purchased with Gold[NEWLINE][NEWLINE]LAND UNIT RESOURCES[NEWLINE]Cannon[NEWLINE]- 1 Iron[NEWLINE][NEWLINE]Artillery[NEWLINE]- 1 Iron[NEWLINE][NEWLINE]Rocket Artillery[NEWLINE]- 1 Aluminum[NEWLINE][NEWLINE]Landship[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Tank[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Modern Armor[NEWLINE]- 1 Oil + 1 Aluminum[NEWLINE][NEWLINE]NAVAL UNIT RESOURCES[NEWLINE]Ironclad[NEWLINE]- 1 Coal + 1 Iron[NEWLINE][NEWLINE]Destroyer[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Battleship[NEWLINE]- 2 Oil + 1 Iron[NEWLINE][NEWLINE]Carrier[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Submarine[NEWLINE]- Ranged attack range reduced from 2 to 1[NEWLINE]- Requires 1 Oil[NEWLINE][NEWLINE]Nuclear Submarine[NEWLINE]- 1 Uranium[NEWLINE][NEWLINE]Missile Cruiser[NEWLINE]- 1 Oil + 1 Aluminum[NEWLINE][NEWLINE]AIR UNIT RESOURCES[NEWLINE]Great War Bomber[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Fighter[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Bomber[NEWLINE]- 1 Oil + 1 Iron[NEWLINE][NEWLINE]Jet Fighter[NEWLINE]- 1 Oil + 1 Aluminum[NEWLINE][NEWLINE]Stealth Bomber[NEWLINE]- 1 Oil + 1 Aluminum</Description>
+    <Version>2</Version>
+    <Database>
+        <XML>UnitResources.xml</XML>
+        <XML>UnitStats.xml</XML>
+        <XML>UnitPromotions.xml</XML>
+        <XML>UnitText.xml</XML>
+    </Database>
+</Module>
