@@ -18,9 +18,10 @@ function normalize(obj, kind, key, index) {
   if (!name) return null;
   const version = getVersion(obj);
   const description = getDescription(obj);
+  const subtitle = first(obj.subtitle);
   const requirements = obj.requirements ?? obj.requiredDlc ?? obj.requiredDLC ?? obj.dependencies ?? obj.requires;
   const notes = first(obj.notes, obj.changelog);
-  return { id: `${kind}-${index}`, name, kind, version, description, requirements, notes };
+  return { id: `${kind}-${index}`, name, kind, version, subtitle, description, requirements, notes };
 }
 function normalizeManifest(data) {
   if (!data || typeof data !== 'object') throw new Error('Repository manifest is not an object.');
@@ -55,7 +56,7 @@ function make(tag, className, value) {
 function render() {
   const grid = $('module-grid');
   grid.replaceChildren();
-  const filtered = state.entries.filter(item => (state.filter === 'all' || state.filter === item.kind) && `${item.name} ${item.description} ${item.version}`.toLowerCase().includes(state.search));
+  const filtered = state.entries.filter(item => (state.filter === 'all' || state.filter === item.kind) && `${item.name} ${item.subtitle} ${item.description} ${item.version}`.toLowerCase().includes(state.search));
   $('catalog-count').textContent = `${filtered.length} ${filtered.length === 1 ? 'entry' : 'entries'} shown`;
   if (!filtered.length) {
     grid.append(make('div', 'empty', state.entries.length ? 'No modules match your search.' : 'No catalog entries to display. Check the manifest link for the latest repository information.'));
@@ -66,7 +67,7 @@ function render() {
     const meta = make('div', 'card-meta');
     meta.append(make('span', '', item.kind === 'core' ? 'Core DLC' : 'Optional module'));
     if (item.version) meta.append(make('span', 'version', `v${item.version.replace(/^v/i, '')}`));
-    card.append(meta, make('h3', '', item.name), make('p', '', item.description || 'Explore this entry in the Expanded Realms repository.'));
+    card.append(meta, make('h3', '', item.name), make('p', '', item.subtitle || 'No subtitle provided.'));
     const bottom = make('div', 'card-bottom');
     const button = make('button', '', 'View details →');
     button.type = 'button';
