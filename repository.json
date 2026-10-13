@@ -143,7 +143,7 @@
       "id": "WorkableMountains",
       "name": "Workable Mountains",
       "subtitle": "Workable mountains, a rebalanced Observatory, and a new mountain pantheon",
-      "description": "Mountains can now be worked by cities and provide +2 Culture and +1 Science.\n\nObservatory Rebalance:\nThe Observatory can be built in any city, provides +10% Science, costs 2 Gold per turn in maintenance, and grants +2 Science to Mountains worked by the city.\n\nNew Pantheon - Sacred Mountains:\nMountains gain +1 Faith and +1 Culture in cities benefiting from this pantheon.\n\nDesigned for Civilization V: Brave New World.",
+      "description": "Mountains can now be worked by cities and provide +2 Culture and +1 Science.\n\nObservatory Rebalance:\nThe Observatory can be built in any city, provides +10% Science, costs 2 Gold per turn in maintenance, and grants +2 Science to Mountains worked by the city.\n\nNew Pantheon - Sacred Mountains:\nMountains gain +1 Faith and +1 Culture in cities benefiting from this pantheon.",
       "version": 1,
       "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/WorkableMountains_v1.zip",
       "sha256": "",
