@@ -1,5 +1,10 @@
 {
   "schemaVersion": 2,
+  "installer": {
+    "name": "Expanded Realms Module Manager",
+    "version": "0.0.3",
+    "downloadUrl": "https://github.com/l0b5ter/Expanded-Realms/releases/download/0.0.3/ExpandedRealms-MM.exe"
+  },
   "officialDlc": {
     "mongolia": {
         "name": "Civilization and Scenario Pack: Mongolia",
