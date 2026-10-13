@@ -72,10 +72,7 @@
       "sha256": "",
       "imageUrl": null,
       "requiredDlcVersion": 1,
-      "dependencies": {
-        "officialDlc": ["godsAndKings"],
-        "modules": []
-      }
+      "dependencies": ["godsAndKings"]
     },
     {
       "id": "ResourceProspecting",
