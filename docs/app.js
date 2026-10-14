@@ -4,8 +4,7 @@ const REPO = 'Expanded-Realms';
 const ROOT = `https://github.com/${OWNER}/${REPO}`;
 const RAW_MANIFEST = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/repository.json`;
 const RELEASES = `${ROOT}/releases`;
-const API_RELEASE = `https://api.github.com/repos/${OWNER}/${REPO}/releases/latest`;
-const state = { entries: [], search: '', filter: 'all' };
+const state = { entries: [], officialDlc: {}, search: '', filter: 'all' };
 const $ = id => document.getElementById(id);
 const text = value => typeof value === 'string' || typeof value === 'number' ? String(value).trim() : '';
 const first = (...values) => values.map(text).find(Boolean) || '';
@@ -19,14 +18,13 @@ function normalize(obj, kind, key, index) {
   const version = getVersion(obj);
   const description = getDescription(obj);
   const subtitle = first(obj.subtitle);
-  const requirements = obj.requirements ?? obj.requiredDlc ?? obj.requiredDLC ?? obj.dependencies ?? obj.requires;
+  const requirements = obj.dependencies ?? obj.requirements ?? obj.requiredDlc ?? obj.requiredDLC ?? obj.requires;
   const notes = first(obj.notes, obj.changelog);
-  return { id: `${kind}-${index}`, name, kind, version, subtitle, description, requirements, notes };
+  return { id: `${kind}-${index}`, sourceId: first(obj.id, obj._key), name, kind, version, subtitle, description, requirements, notes };
 }
 function normalizeManifest(data) {
   if (!data || typeof data !== 'object') throw new Error('Repository manifest is not an object.');
   const result = [];
-  // The repository schema can evolve. Recognize common collections without inventing catalog entries.
   const core = data.dlc ?? data.coreDlc ?? data.coreDLC ?? data.core ?? data.mainDlc ?? data.mainDLC;
   if (core && typeof core === 'object') {
     const items = Array.isArray(core) ? core : [core];
@@ -80,7 +78,16 @@ function render() {
 function displayRequirements(value) {
   if (!value) return '';
   if (Array.isArray(value)) return value.map(entry => typeof entry === 'object' ? first(entry.name, entry.id, entry.title) : text(entry)).filter(Boolean).join(', ');
-  if (typeof value === 'object') return Object.entries(value).filter(([, enabled]) => enabled).map(([name]) => name).join(', ');
+  if (typeof value === 'object') {
+    const official = Array.isArray(value.officialDlc) ? value.officialDlc : [];
+    const modules = Array.isArray(value.modules) ? value.modules : [];
+    const resolved = [
+      ...official.map(id => state.officialDlc[id]?.name || text(id)),
+      ...modules.map(id => state.entries.find(item => item.sourceId === id)?.name || text(id))
+    ].filter(Boolean);
+    if (resolved.length || 'officialDlc' in value || 'modules' in value) return resolved.join(', ');
+    return Object.entries(value).filter(([, enabled]) => enabled === true).map(([name]) => name).join(', ');
+  }
   return text(value);
 }
 function showDetails(item) {
@@ -95,34 +102,33 @@ function showDetails(item) {
   if (item.notes) extra.append(make('p', '', `Notes: ${item.notes}`));
   $('detail-dialog').showModal();
 }
+function configureInstaller(installer) {
+  const url = text(installer?.downloadUrl);
+  const valid = /^https:\/\/github\.com\/l0b5ter\/Expanded-Realms\/releases\/download\/[^\s]+\.exe(?:\?[^\s]*)?$/i.test(url);
+  const buttons = [$('hero-download'), $('install-download')].filter(Boolean);
+  if (valid) {
+    buttons.forEach(button => { button.href = url; });
+    $('release-note').textContent = `${first(installer.name, 'Expanded Realms Module Manager')}${installer.version ? ` v${installer.version}` : ''} · Direct Windows EXE download.`;
+  } else {
+    buttons.forEach(button => { button.href = RELEASES; });
+    $('release-note').textContent = 'Installer download URL is unavailable in the repository manifest. View GitHub Releases.';
+  }
+}
 async function loadManifest() {
   try {
     const response = await fetch(`${RAW_MANIFEST}?t=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
+    state.officialDlc = data.officialDlc || {};
     state.entries = normalizeManifest(data);
+    configureInstaller(data.installer);
     $('catalog-status').textContent = state.entries.length ? 'Catalog synchronized with the GitHub repository.' : 'Manifest loaded, but no supported catalog collections were found. The manifest structure may need a small mapping adjustment.';
   } catch (error) {
     $('catalog-status').textContent = 'Live catalog could not be loaded. Please check the repository manifest or try again later.';
+    $('release-note').textContent = 'Could not load the installer link from the repository manifest. View GitHub Releases.';
     console.warn('Expanded Realms catalog:', error);
   }
   render();
-}
-async function loadRelease() {
-  const buttons = [$('hero-download'), $('install-download')];
-  try {
-    const response = await fetch(API_RELEASE, { headers: { Accept: 'application/vnd.github+json' } });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const release = await response.json();
-    const assets = Array.isArray(release.assets) ? release.assets : [];
-    const exe = assets.find(asset => /ExpandedRealmsModuleManager.*\.exe$/i.test(asset.name)) || assets.find(asset => /module.*manager.*\.exe$/i.test(asset.name));
-    const destination = exe?.browser_download_url || release.html_url || RELEASES;
-    buttons.forEach(button => { button.href = destination; });
-    $('release-note').textContent = exe ? `Latest release: ${release.tag_name || release.name || 'available'} · Direct Windows EXE download.` : `Latest release: ${release.tag_name || release.name || 'available'} · Choose the Windows manager on GitHub.`;
-  } catch {
-    buttons.forEach(button => { button.href = RELEASES; });
-    $('release-note').textContent = 'Download via GitHub Releases. The latest release could not be checked automatically.';
-  }
 }
 $('search').addEventListener('input', event => { state.search = event.target.value.trim().toLowerCase(); render(); });
 $('filter').addEventListener('change', event => { state.filter = event.target.value; render(); });
@@ -130,4 +136,3 @@ $('detail-close').addEventListener('click', () => $('detail-dialog').close());
 $('detail-action').addEventListener('click', () => $('detail-dialog').close());
 $('detail-dialog').addEventListener('click', event => { if (event.target === $('detail-dialog')) $('detail-dialog').close(); });
 loadManifest();
-loadRelease();
